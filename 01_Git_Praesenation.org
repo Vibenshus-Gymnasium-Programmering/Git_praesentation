@@ -1,0 +1,146 @@
+#+title: Git 
+#+subtitle: Programmering B
+#+author: Vibenshus Gymnasium
+#+date: 2022 - 2024
+# Themes: beige|black|blood|league|moon|night|serif|simple|sky|solarized|white
+#+reveal_theme: night
+#+reveal_title_slide: <h2>%t</h2><h3>%s</h3><h4>%a</h4><h4>%d</h4>
+#+reveal_title_slide_background: ./img/git.png
+#+reveal_title_slide_background_position: bottom
+#+reveal_title_slide_background_size: 50%
+#+reveal_default_slide_background:
+#+reveal_extra_options: slideNumber:"c/t",progress:true,transition:"slide",navigationMode:"default",history:false,hash:true
+# #+reveal_extra_attr: style="color:red"
+#+options: toc:nil num:nil tags:nil timestamp:nil ^:{}
+
+* Installation af Git
+
+#+reveal_html: <div style="font-size: 60%;">
+
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Besøg [[https://git-scm.com/downloads]] 
+- Download den version, der passer til jeres operativsystem.
+- Følg vejledningen i installationsprogrammet.
+- Vi kommer i første omgang til at anvende kommandolinjen, men man også installere grafiske brugerflader. Hvis I vælger dette, må I selv vælge, hvilken I vil anvende.
+- Der kommer også til at være understøttelse af git i de IDE'er, I kan vælge mellem.
+- I kan også følge vejledningen her: [[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git]]
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+attr_html: :width 80%
+[[./img/git_download.png]]
+#+reveal_html: </div>
+
+** Opsætning af git
+#+reveal_html: <div style="font-size: 60%;">
+- Efter installation af =git= skal der lige foretages noget førstegangsopsætning.
+- Følg vejledningen her: [[https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup]]
+- Hvis I *ikke* vil bruge editoren =vim=, så skal I lægge særligt mærke til afsnittet *Your Editor*.
+- I de nyeste versioner af =git=, så er standardgrennavnet (default branch name) =main= allerede. I kan nok derfor ignorere afsnittet *Your default branch name*.
+- I kan generelt finde dokumentation af git her: [[https://git-scm.com/book/en/v2]]. Sørg for at bogmærke denne side.
+
+* GitHub
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Vi kommer til at anvende GitHub (og GitHub Classroom).
+- Besøg [[https://github.com]]
+- (Hvis I allerede har en githubprofil, som I bruger, så behøver I ikke mere.)
+- Tryk på =Sign up for GitHub=
+- Følg vejledningen.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+
+#+DOWNLOADED: screenshot @ 2022-07-29 11:23:01
+#+attr_html: :width 600px
+#+attr_latex: :width 7cm
+[[file:img/2022-07-29_11-23-01_screenshot.png]]
+#+reveal_html: </div>
+
+** GitHub personal access token
+#+reveal_html: <div style="font-size: 50%;">
+#+reveal_html: <div class="column" style="float:left; width: 60%">
+- GitHub lukket for anvendelsen af sit almindelige password til GitHub, når man skal bruge git fra kommandolinjen etc.
+- I stedet skal man oprette en =personal access token=.
+- Følg vejledningen her: [[https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token]]
+- Brug jeres =personal access token=, som var det et almindeligt password.
+- Jeg gemmer det selv i min passwordhusker ([[https://keepassxc.org/]])
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 40%">
+#+DOWNLOADED: screenshot @ 2022-07-29 14:28:06
+#+attr_html: :width 600px
+#+attr_latex: :width 7cm
+[[file:img/2022-07-29_14-28-06_screenshot.png]]
+#+reveal_html: </div>
+
+* GitHub Classroom
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Vi kommer til at anvende GitHub Classroom til opgaver og afleveringer.
+- I skal mest bare klikke på links og acceptere opgaver.
+- Derefter kan I ~klone~ opgaverne vha. ~git~. 
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+
+#+DOWNLOADED: screenshot @ 2022-07-29 15:05:38
+#+attr_html: :width 600px
+#+attr_latex: :width 7cm
+[[file:img/2022-07-29_15-05-38_screenshot.png]]
+#+reveal_html: </div>
+
+* Lær at bruge git
+** [[https://learngitbranching.js.org/][Learn git branching]]
+
+#+attr_html: :width 70%
+[[https://learngitbranching.js.org/][file:img/learngitbranching.png]]
+
+#+reveal_html: <div style="font-size: 60%;">
+- Følg linket(tryk på billedet)
+- Giv jer i kast med opgaverne/banerne.
+- Det er bare leg!
+** Git fremadrettet
+#+reveal_html: <div style="font-size: 60%;">
+For at gøre det så let for jer (og mig) som muligt, skal I i fremtiden anvende
+- [[https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow][Git Feature Branch Workflow]], når I arbejder selvstændigt
+- og [[https://docs.github.com/en/get-started/quickstart/github-flow][GitHub flow]], når I arbejder i grupper.
+- Når I skal til at arbejde i grupper, træner vi lige brugen af =git= med en omgang [[https://profy.dev/project/github-minesweeper][minestryger]].
+** Ekstra resourcer
+#+reveal_html: <div style="font-size: 60%;">
+- Lidt ekstra introduktion fra GitHub. [[https://skills.github.com/]]
+- Slå git-kommandoer op [[https://gitexplorer.com/]]
+- [[https://www.atlassian.com/git/tutorials/merging-vs-rebasing][Merging vs. Rebasing]]
+- [[https://github.com/eficode-academy/git-katas][En masse småøvelser om git]]
+* Jeres første (git)lektie
+** Logbog
+#+reveal_html: <div style="font-size: 60%;">
+- besøg [[https://github.com]] og log ind med jeres bruger.
+- Klik på linket [[https://classroom.github.com/a/slPR9059]]
+- Vælg jer selv på listen over klassens elever, for at tilknytte jeres githubkonto til github classroom. (I skal vist kun gøre det den første gang).
+- Tryk herefter på *Accept this assignment*
+- Når opgaven/siden efterfølgende er indlæst, kommer der et link frem til jeres eget git-repo til logbogen. *Klik på dette link, og bliv først til jeres git-repo*.
+- I kan nu *klone* jeres logbog lokalt til jeres computer, eller I kan editere filerne direkte i browseren.
+*** Kloning af logbog
+#+reveal_html: <div style="font-size: 60%;">
+- For at klone skal I åbne =git-bash= (eller anden kommandoprompt med adgang til ~git~).
+- Navigere til den mappe, I vil have jeres logbogsgit-repo i med ~cd sti\til\logbog~.
+- Klone med ~git clone https://url.til.logbog~
+*** Udfyldelse af logbog
+#+reveal_html: <div style="font-size: 60%;">
+*Jeres første indhold i logbogen*
+- Opret en ny overskrift med dato og emne øverst i logbogen.
+- Nedskriv jeres egne noter omkring brugen af ~git~.
+  - Hvilke kommandoer skal man anvende for at arbejde efter *git feature branch workflowet*?
+  - På hvilken ~gren~ skal man stå for at ~merge~ to grene sammen?
+  - På hvilken ~gren~ skal man stå for at ~rebase~ to grene?
+  - Hvad er fordele og ulemper ved hhv ~merge~ og ~rebase~?
+  - Hvad I ellers synes er vigtigt.
+- Anvend markdown- eller org-syntaks, når I skriver jeres noter ned.
+- Anvend git til at uploade jeres ændringer i logbogen (det hele på main-grenen).
+  - git add .
+  - git commit (-m "kort beskrivelse")
+  - git push
+
+
+*Det forventes, at I skriver logbog hver uge!*

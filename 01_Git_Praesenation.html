@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8"/>
+<title>Git</title>
+<meta name="author" content="Vibenshus Gymnasium"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/night.css" id="theme"/>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./img/git.png" data-background-size="50%" data-background-position="bottom">
+<h2>Git</h2><h3>Programmering B</h3><h4>Vibenshus Gymnasium</h4><h4>2022 - 2024</h4>
+</section>
+
+<section>
+<section id="slide-org11346f6" data-background="">
+<h2 id="org11346f6">Installation af Git</h2>
+<div style="font-size: 60%;">
+
+<div class="column" style="float:left; width: 50%">
+<ul>
+<li>Besøg <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
+<li>Download den version, der passer til jeres operativsystem.</li>
+<li>Følg vejledningen i installationsprogrammet.</li>
+<li>Vi kommer i første omgang til at anvende kommandolinjen, men man også installere grafiske brugerflader. Hvis I vælger dette, må I selv vælge, hvilken I vil anvende.</li>
+<li>Der kommer også til at være understøttelse af git i de IDE'er, I kan vælge mellem.</li>
+<li>I kan også følge vejledningen her: <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></li>
+
+</ul>
+</div>
+
+<div class="column" style="float:right; width: 50%">
+
+<div id="orga5e9f87" class="figure">
+<p><img src="./img/git_download.png" alt="git_download.png" width="80%" />
+</p>
+</div>
+</div>
+
+</section>
+<section id="slide-org3ba9bf8" data-background="">
+<h3 id="org3ba9bf8">Opsætning af git</h3>
+<div style="font-size: 60%;">
+<ul>
+<li>Efter installation af <code>git</code> skal der lige foretages noget førstegangsopsætning.</li>
+<li>Følg vejledningen her: <a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup">https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup</a></li>
+<li>Hvis I <b>ikke</b> vil bruge editoren <code>vim</code>, så skal I lægge særligt mærke til afsnittet <b>Your Editor</b>.</li>
+<li>I de nyeste versioner af <code>git</code>, så er standardgrennavnet (default branch name) <code>main</code> allerede. I kan nok derfor ignorere afsnittet <b>Your default branch name</b>.</li>
+<li>I kan generelt finde dokumentation af git her: <a href="https://git-scm.com/book/en/v2">https://git-scm.com/book/en/v2</a>. Sørg for at bogmærke denne side.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org2f4cc91" data-background="">
+<h2 id="org2f4cc91">GitHub</h2>
+<div style="font-size: 60%;">
+<div class="column" style="float:left; width: 50%">
+<ul>
+<li>Vi kommer til at anvende GitHub (og GitHub Classroom).</li>
+<li>Besøg <a href="https://github.com">https://github.com</a></li>
+<li>(Hvis I allerede har en githubprofil, som I bruger, så behøver I ikke mere.)</li>
+<li>Tryk på <code>Sign up for GitHub</code></li>
+<li>Følg vejledningen.</li>
+
+</ul>
+</div>
+
+<div class="column" style="float:right; width: 50%">
+
+
+<div id="org3c032c4" class="figure">
+<p><img src="img/2022-07-29_11-23-01_screenshot.png" alt="2022-07-29_11-23-01_screenshot.png" width="600px" />
+</p>
+</div>
+</div>
+
+</section>
+<section id="slide-orgd43c52a" data-background="">
+<h3 id="orgd43c52a">GitHub personal access token</h3>
+<div style="font-size: 50%;">
+<div class="column" style="float:left; width: 60%">
+<ul>
+<li>GitHub lukket for anvendelsen af sit almindelige password til GitHub, når man skal bruge git fra kommandolinjen etc.</li>
+<li>I stedet skal man oprette en <code>personal access token</code>.</li>
+<li>Følg vejledningen her: <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token</a></li>
+<li>Brug jeres <code>personal access token</code>, som var det et almindeligt password.</li>
+<li>Jeg gemmer det selv i min passwordhusker (<a href="https://keepassxc.org/">https://keepassxc.org/</a>)</li>
+
+</ul>
+</div>
+
+<div class="column" style="float:right; width: 40%">
+
+<div id="org9feffea" class="figure">
+<p><img src="img/2022-07-29_14-28-06_screenshot.png" alt="2022-07-29_14-28-06_screenshot.png" width="600px" />
+</p>
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgaf494e0" data-background="">
+<h2 id="orgaf494e0">GitHub Classroom</h2>
+<div style="font-size: 60%;">
+<div class="column" style="float:left; width: 50%">
+<ul>
+<li>Vi kommer til at anvende GitHub Classroom til opgaver og afleveringer.</li>
+<li>I skal mest bare klikke på links og acceptere opgaver.</li>
+<li>Derefter kan I <code>klone</code> opgaverne vha. <code>git</code>.</li>
+
+</ul>
+</div>
+
+<div class="column" style="float:right; width: 50%">
+
+
+<div id="org39bac66" class="figure">
+<p><img src="img/2022-07-29_15-05-38_screenshot.png" alt="2022-07-29_15-05-38_screenshot.png" width="600px" />
+</p>
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org6323ace" data-background="">
+<h2 id="org6323ace">Lær at bruge git</h2>
+<div class="outline-text-2" id="text-org6323ace">
+</div>
+</section>
+<section id="slide-orgaea7164" data-background="">
+<h3 id="orgaea7164"><a href="https://learngitbranching.js.org/">Learn git branching</a></h3>
+
+<div id="org23cf95e" class="figure">
+<p><a href="https://learngitbranching.js.org/" width="70%"><img src="img/learngitbranching.png" alt="learngitbranching.png" width="70%" /></a>
+</p>
+</div>
+
+<div style="font-size: 60%;">
+<ul>
+<li>Følg linket(tryk på billedet)</li>
+<li>Giv jer i kast med opgaverne/banerne.</li>
+<li>Det er bare leg!</li>
+
+</ul>
+</section>
+<section id="slide-orgc6ca101" data-background="">
+<h3 id="orgc6ca101">Git fremadrettet</h3>
+<div style="font-size: 60%;">
+<p>
+For at gøre det så let for jer (og mig) som muligt, skal I i fremtiden anvende
+</p>
+<ul>
+<li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow">Git Feature Branch Workflow</a>, når I arbejder selvstændigt</li>
+<li>og <a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow</a>, når I arbejder i grupper.</li>
+<li>Når I skal til at arbejde i grupper, træner vi lige brugen af <code>git</code> med en omgang <a href="https://profy.dev/project/github-minesweeper">minestryger</a>.</li>
+
+</ul>
+</section>
+<section id="slide-org93ee2f5" data-background="">
+<h3 id="org93ee2f5">Ekstra resourcer</h3>
+<div style="font-size: 60%;">
+<ul>
+<li>Lidt ekstra introduktion fra GitHub. <a href="https://skills.github.com/">https://skills.github.com/</a></li>
+<li>Slå git-kommandoer op <a href="https://gitexplorer.com/">https://gitexplorer.com/</a></li>
+<li><a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Merging vs. Rebasing</a></li>
+<li><a href="https://github.com/eficode-academy/git-katas">En masse småøvelser om git</a></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgd3b37a7" data-background="">
+<h2 id="orgd3b37a7">Jeres første (git)lektie</h2>
+<div class="outline-text-2" id="text-orgd3b37a7">
+</div>
+</section>
+<section id="slide-org7ad648d" data-background="">
+<h3 id="org7ad648d">Logbog</h3>
+<div style="font-size: 60%;">
+<ul>
+<li>besøg <a href="https://github.com">https://github.com</a> og log ind med jeres bruger.</li>
+<li>Klik på linket <a href="https://classroom.github.com/a/slPR9059">https://classroom.github.com/a/slPR9059</a></li>
+<li>Vælg jer selv på listen over klassens elever, for at tilknytte jeres githubkonto til github classroom. (I skal vist kun gøre det den første gang).</li>
+<li>Tryk herefter på <b>Accept this assignment</b></li>
+<li>Når opgaven/siden efterfølgende er indlæst, kommer der et link frem til jeres eget git-repo til logbogen. <b>Klik på dette link, og bliv først til jeres git-repo</b>.</li>
+<li>I kan nu <b>klone</b> jeres logbog lokalt til jeres computer, eller I kan editere filerne direkte i browseren.</li>
+
+</ul>
+</section>
+<section id="slide-org7ccb49c" data-background="">
+<h4 id="org7ccb49c">Kloning af logbog</h4>
+<div style="font-size: 60%;">
+<ul>
+<li>For at klone skal I åbne <code>git-bash</code> (eller anden kommandoprompt med adgang til <code>git</code>).</li>
+<li>Navigere til den mappe, I vil have jeres logbogsgit-repo i med <code>cd sti\til\logbog</code>.</li>
+<li>Klone med <code>git clone https://url.til.logbog</code></li>
+
+</ul>
+</section>
+<section id="slide-org21ee4d0" data-background="">
+<h4 id="org21ee4d0">Udfyldelse af logbog</h4>
+<div style="font-size: 60%;">
+<p>
+<b>Jeres første indhold i logbogen</b>
+</p>
+<ul>
+<li>Opret en ny overskrift med dato og emne øverst i logbogen.</li>
+<li>Nedskriv jeres egne noter omkring brugen af <code>git</code>.
+<ul>
+<li>Hvilke kommandoer skal man anvende for at arbejde efter <b>git feature branch workflowet</b>?</li>
+<li>På hvilken <code>gren</code> skal man stå for at <code>merge</code> to grene sammen?</li>
+<li>På hvilken <code>gren</code> skal man stå for at <code>rebase</code> to grene?</li>
+<li>Hvad er fordele og ulemper ved hhv <code>merge</code> og <code>rebase</code>?</li>
+<li>Hvad I ellers synes er vigtigt.</li>
+
+</ul></li>
+<li>Anvend markdown- eller org-syntaks, når I skriver jeres noter ned.</li>
+<li>Anvend git til at uploade jeres ændringer i logbogen (det hele på main-grenen).
+<ul>
+<li>git add .</li>
+<li>git commit (-m "kort beskrivelse")</li>
+<li>git push</li>
+
+</ul></li>
+
+</ul>
+
+
+<p>
+<b>Det forventes, at I skriver logbog hver uge!</b>
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/search/search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: false,
+slideNumber: 'c/t',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+
+transition: 'slide',
+transitionSpeed: 'default',
+slideNumber:"c/t",progress:true,transition:"slide",navigationMode:"default",history:false,hash:true,
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealNotes, RevealSearch, RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>
